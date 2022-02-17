@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/background12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Trebuchet MS";
+}
+
+.header-container {
+  width: 75%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+
+.options {
+  display: flex;
+  list-style-type: none;
+  margin: auto 0 0 0;
+}
+
+.options li:not(:last-child) a {
+  border-right: 1px solid #d3d3d3;
+}
+
+.options li a {
+  padding: 0 1rem;
+  color: #a8a8a8;
+  font-size: 90%;
+}
+
+.options li a:hover {
+  text-decoration: underline;
+}
+
+.options li a img {
+  margin-right: 2px;
+}
+
+.options li a span {
+  color: #3a3b57;
+}
+
+.nav-container-outer {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 2px 0;
+}
+
+.nav-container-inner {
+  background: #d9d9d9;
+}
+
+nav {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlinks {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.navlinks li {
+  border-right: 1px solid #fff;
+  padding: 0.5em 0;
+}
+
+.navlinks li a {
+  color: #000;
+}
+
+.navlinks li:first-child a {
+  padding: 0.5em 1.25em 0.5em 0.5em;
+}
+
+.navlinks li:not(:first-child) a {
+  padding: 0.5em 1.25em;
+}
+
+.search-container {
+  padding-right: 1em;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.offer-tab-container {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.offer-tab {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.offers li {
+  padding-right: 2em;
+  padding-left: 0.5em;
+}
+
+.offers li:first-child {
+  list-style-type: none;
+}
+
+.offers li:not(:first-child) {
+  list-style-type: circle;
+}
+
+.offers li a {
+  font-size: 1.06em;
+  color: #7a7f98;
+}
+
+.offers li a:hover {
+  text-decoration: underline;
+}
+
+.bridal-registry {
+  display: flex;
+  align-items: center;
+  padding-right: 3.5em;
+}
+
+.bridal-registry a {
+  color: #7a7f98;
+  padding-left: 0.5em;
+}
+
+.bridal-registry a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 75%;
+  margin: auto;
+}
+
+.top-container {
+  background: #fff;
+  padding: 0.5em;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe {
+  width: 175%;
+  margin-right: 0.5em;
+}
+
+.card {
+  background: #333;
+  outline: 1px solid #565655;
+  outline-offset: -0.5em;
+  padding: 4em 2em 2em 2em;
+}
+
+.card h2 {
+  font-weight: normal;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 0 0.5em 0.25em;
+}
+
+.card p {
+  color: #8c8b8a;
+  margin: 0 0.5em;
+}
+
+.card a {
+  color: #8c8b8a;
+  text-decoration: underline;
+}
+
+.menu-options {
+  margin: 1.5em 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-options li {
+  padding: 0.4em 0.5em;
+}
+
+.menu-options li:not(:last-child) {
+  border-bottom: 1px solid #8c8b8a;
+}
+
+.menu-options li a {
+  text-decoration: none;
+  color: #d4d3d2;
+  font-size: 1.1em;
+}
+
+.bottom-container {
+  background: #2e2f2c;
+  padding: 0.5em;
+}
+
+.bottom {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.tile {
+  position: relative;
+}
+
+.tile img {
+  display: block;
+}
+
+.content {
+  height: 90%;
+  width: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #eaeaea;
+}
+
+.content h3 {
+  font-weight: normal;
+  color: #6b6b6a;
+  margin: 0;
+  font-size: 100%;
+}
+
+.content p {
+  margin: 0;
+  margin-top: 1%;
+  font-size: 70%;
+  color: #a1a0a1;
+}
+
+.content a {
+  color: #7c87a3;
+  font-size: 90%;
+}
+
+.glass .content {
+  top: 8%;
+  left: 8%;
+  padding-right: 10%;
+}
+
+.glass .content a {
+  float: right;
+  margin-top: 6%;
+  margin-right: 10%;
+}
+
+.plates .content {
+  width: 110%;
+  height: 110%;
+  top: -16%;
+}
+
+.plates .content a {
+  float: right;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.album .content {
+  border: none;
+  left: -60%;
+  top: 5%;
+  width: 80%;
+}
+
+.album .content a {
+  float: right;
+  margin-top: 20%;
+  margin-right: 2%;
+}
+
+footer {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5% 0;
+}
+
+footer a {
+  font-size: 0.75em;
+  color: #8e8d8f;
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin: 0 0 2% 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-links li {
+  padding: 0 2%;
+  border-left: 1px solid #8e8d8f;
+}
+
+.footer-links li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+footer p {
+  color: #8e8d8f;
+  font-size: 0.8em;
+  margin: 0 0 2% 0;
+}
+
+.mail-id {
+  font-size: 1em;
+}
+
+.signup form input {
+  font-size: 0.8em;
+  width: 60%;
+}
