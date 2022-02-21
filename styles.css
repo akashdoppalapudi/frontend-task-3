@@ -376,6 +376,14 @@ footer p {
 .signup form input {
 	font-size: 0.8em;
 	width: 60%;
+	border: none;
+	padding: 3px 0;
+	padding-left: 5px;
+	box-shadow: 2px 2px 2px #737373 inset;
+}
+
+.signup form button {
+	padding: 2px 5px;
 }
 
 @media only screen and (max-width: 1350px) {
