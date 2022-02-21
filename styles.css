@@ -393,6 +393,12 @@ footer p {
 	padding: 2px 5px;
 }
 
+@media only screen and (max-width: 1435px) {
+	.navlinks li a {
+		font-size: 0.9em;
+	}
+}
+
 @media only screen and (max-width: 1350px) {
 	.options li a {
 		padding: 0 0.75em;
@@ -431,28 +437,33 @@ footer p {
 		font-size: 0.9em;
 	}
 
-	.glass .content {
-		width: 90%;
-	}
-
 	.glass .content a {
 		margin-top: 0;
-		margin-right: 4%;
+		margin-right: 2%;
 	}
 
 	.plates .content {
-		width: 95%;
+		width: 90%;
+	}
+
+	.plates .content a {
+		margin-top: 2%;
+		margin-right: 2%;
 	}
 
 	.album .content {
 		border: none;
-		left: -20%;
-		top: 5%;
-		width: 80%;
+		left: 2%;
+		top: 8%;
+		width: 90%;
+	}
+
+	.album .content h3 {
+		width: 60%;
 	}
 
 	.album .content a {
-		margin-top: 6%;
+		margin-top: 4%;
 	}
 }
 
@@ -528,23 +539,13 @@ footer p {
 		font-size: 0.9em;
 	}
 
-	.glass .content {
-		width: 90%;
-	}
-
 	.glass .content a {
 		margin-top: 0;
 		margin-right: 4%;
 	}
 
-	.plates .content {
-		width: 95%;
-	}
-
 	.album .content {
-		left: -40%;
-		top: 5%;
-		width: 80%;
+		width: 9 0%;
 	}
 
 	.album .content a {
@@ -567,14 +568,6 @@ footer p {
 
 	.card > a {
 		font-size: 0.75em;
-	}
-}
-
-@media only screen and (max-width: 950px) {
-	.album .content {
-		left: -25%;
-		top: 5%;
-		width: 80%;
 	}
 }
 
@@ -620,6 +613,15 @@ footer p {
 		padding: 1% 0;
 	}
 
+	.search-container form {
+		margin: 0;
+	}
+
+	.search-container {
+		display: flex;
+		justify-content: center;
+	}
+
 	.offers li a {
 		font-size: 0.9em;
 	}
@@ -638,45 +640,44 @@ footer p {
 	}
 
 	.bottom {
-		display: inline-block;
-		width: 100%;
+		grid-template-columns: auto;
 	}
 
 	.tile {
-		width: 100%;
-		display: flex;
 		position: static;
-		justify-content: space-around;
+		display: grid;
+		grid-template-columns: auto auto;
 	}
 
-	.glass .content {
+	.tile img {
 		position: static;
-		width: 100%;
-		padding: 5% 10% 0 10%;
+		margin: 0;
 	}
 
-	.glass .content a {
-		margin-top: 10%;
-	}
-
-	.plates .content {
+	.content {
 		position: static;
-		width: 100%;
-		padding: 5% 10% 0 10%;
-	}
-
-	.plates .content a {
-		margin-top: 10%;
+		border-right: none;
+		margin: 5% 0 0 auto;
+		width: 50%;
 	}
 
 	.album .content {
-		position: static;
-		width: 100%;
-		padding: 5% 10% 0 10%;
+		width: 70%;
 	}
 
-	.album .content a {
-		margin-top: 10%;
+	.album .content h3 {
+		width: 100%;
+	}
+
+	.album .content p {
+		width: 100%;
+	}
+
+	.tile .content a {
+		float: right;
+		margin-top: 5%;
+		margin-right: 15%;
+		margin-left: 0;
 	}
 }
 
@@ -701,6 +702,10 @@ footer p {
 	.tile img {
 		width: 50%;
 	}
+
+	.tile img {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -711,20 +716,28 @@ footer p {
 	.navlinks li a {
 		font-size: 0.7em;
 	}
-	.tile {
-		display: inline-block;
-	}
 
-	.tile:not(:last-child) {
-		border-bottom: 1px solid #d9d9d9;
-	}
-
-	.tile .content {
+	.bottom {
+		height: 950px;
 		padding: 5% 0;
 	}
 
-	.bottom {
-		padding: 10% 0;
+	.tile {
+		display: block;
+	}
+
+	.tile img {
+		width: 250px;
+		height: 100%;
+	}
+
+	.album .content {
+		width: 100%;
+	}
+
+	.tile .content {
+		width: 100%;
+		text-align: center;
 	}
 
 	footer {
@@ -732,8 +745,16 @@ footer p {
 		padding: 0 2%;
 	}
 
+	footer {
+		text-align: center;
+	}
+
 	footer p {
 		font-size: 0.6em;
+	}
+
+	.footer-links {
+		justify-content: center;
 	}
 
 	.footer-links li a {
