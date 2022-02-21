@@ -126,21 +126,24 @@ button {
 }
 
 .offers li {
-	padding-right: 2em;
-	padding-left: 0.5em;
-}
-
-.offers li:first-child {
+	padding-right: 1em;
 	list-style-type: none;
 }
 
-.offers li:not(:first-child) {
-	list-style-type: circle;
+.offers li:not(:first-child):before {
+	content: 'o';
+	padding-right: 1em;
+	color: #4b5681;
+}
+
+.offers li:first-child {
+	margin-left: 0.5em;
+	list-style-type: none;
 }
 
 .offers li a {
 	font-size: 0.9em;
-	color: #7a7f98;
+	color: #4b5681;
 }
 
 .offers li a:hover {
@@ -154,7 +157,7 @@ button {
 }
 
 .bridal-registry a {
-	color: #7a7f98;
+	color: #4b5681;
 	padding-left: 0.5em;
 	font-size: 0.9em;
 }
@@ -205,6 +208,8 @@ main {
 .card a {
 	color: #8c8b8a;
 	text-decoration: underline;
+	font-size: 0.9em;
+	margin-left: 0.5em;
 }
 
 .menu-options {
@@ -225,6 +230,7 @@ main {
 	text-decoration: none;
 	color: #d4d3d2;
 	font-size: 1.1em;
+	margin-left: 0;
 }
 
 .bottom-container {
